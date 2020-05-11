@@ -10,3 +10,8 @@ body {
 a {
   color: $link-color;
 }
+
+nav {
+  display: flex;
+  flex-direction: row;
+}

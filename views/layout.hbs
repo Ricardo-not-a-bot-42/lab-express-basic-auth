@@ -5,6 +5,29 @@
     <link rel='stylesheet' href='/styles/style.css' />
   </head>
   <body>
+    <nav>
+      <h1><a href="/">Authentication Lab</a> </h1>
+      <div>
+      {{#if user}}
+      <div class="nav-account">
+      <h2><a href="/profile" class="username">{{ user.username }}</a></h2>
+      <form action="/authentication/sign-out" method="POST">
+        <button>Log Out</button>
+      </form>
+      </div>
+
+      {{else}}
+      <div class="nav-no-account">
+      <a href="/authentication/sign-up">Sign Up</a>
+      <a href="/authentication/sign-in">Sign In</a>
+      </div>
+
+      {{/if}}
+      </div>
+      
+
+    </nav>
+
     {{{body}}}
   </body>
 </html>

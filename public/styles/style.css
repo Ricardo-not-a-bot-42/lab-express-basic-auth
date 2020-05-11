@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 50px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00b7ff;
+}
+
+input:valid {
+  border: 2px solid green;
+}
+input:invalid:required {
+  border: 2px solid red;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 60%;
+  margin: 0 auto;
+  border-bottom: 2px solid black;
+}
+
+nav * {
+  margin: 0;
+}
+nav h1 {
+  font-size: 3em;
+}
+
+nav .username {
+  font-size: 2em;
+  margin-left: 1em;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+.nav-account {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-account * {
+  margin-left: 0.5em;
+  color: black;
+}
+
+.nav-no-account a {
+  font-size: 1.5em;
+  padding: 0.5em;
+  background-color: deepskyblue;
+  border-radius: 10px;
+  color: black;
+}
+
+.login,
+.signup,
+.edit,
+.change-password,
+.home {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.home {
+  font-size: 5em;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+form label {
+  font-size: 2em;
+}
+
+form input {
+  width: 40%;
+  margin: 1em auto;
+  font-size: 2em;
+}
+
+form button {
+  border-radius: 10px;
+  background-color: deepskyblue;
+  font-size: 1.5em;
+  padding: 0.5em;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: 3em auto;
+}
+
+.account-manage {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 60%;
+  margin: 3em auto;
+}
+
+.account-manage a {
+  font-size: 1.5em;
+  text-decoration: none;
+  margin-left: 1em;
+  padding: 0.5em;
+  background-color: deepskyblue;
+  border-radius: 10px;
+  color: black;
+}
+
+.account-manage button {
+  margin-left: 1em;
+  background-color: brown;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,27 @@
+<div class="profile">
+  <div class="profile-info">
+  <h1>Name: {{ user.name }}</h1>
+  <h3>Username: {{ user.username }}</h1>
+  <h5> Created in: {{ user.createdAt}} </h5>
+  <h5> Last edited in: {{ user.updatedAt}} </h5>
+</div>
+
+<div class="account-manage">
+  <a href="/profile/edit">Edit Profile</a>
+  <a href="/profile/change-password">Change Password</a>
+  <form id="delete-account" action="/profile/delete" method="POST">
+    <button type="button" onclick="deleteConfirm()">Delete account</button>
+  </form>
+</div>
+
+</div>
+
+
+
+<script>
+  const deleteConfirm = () => {
+    if(confirm("Delete your account?")){
+      document.getElementById("delete-account").submit();
+    }
+  }
+</script>
